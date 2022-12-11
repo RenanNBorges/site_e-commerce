@@ -1,0 +1,118 @@
+<html>
+
+    <head>
+        <meta charset="utf-8">
+
+        <meta name="viewport" content="width=device-wdith, initial-scale=1.0">
+        <link rel="shortcut icon" href="../img/icone3.ico" type="image/x-icon">
+        <link rel="stylesheet" href="../css/login.css">
+
+        <title>Login - Adventure Shop</title>
+
+    </head>
+
+<body>
+
+    <header>
+        <div class="menu">
+          <a class="logo" href="../index.html"><h3>Adventure</h3></a>
+  
+          <nav class="nav-bar">
+            <div class="nav-list">
+              <ul>
+                <li class="nav-item"><a href="../index.html" class="nav-link">Início</a></li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link" id="produtos">Produtos à Venda</a>
+                  <ul class="dropdown">
+                      <li><a href="./barracas.html" class="nav-link">Barracas</a></li>
+                      <li><a href="./mochilas.html" class="nav-link">Mochilas</a></li>
+                      <li><a href="./outros.html" class="nav-link">Outros</a></li>
+                  </ul>
+  
+  
+                </li>
+                <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+              </ul>
+            </div>
+          </nav>
+  
+          <div class="login-button">
+            <button id="button-id"><a href="./login.html">Login</a></button>
+            <div class="menu-openner">
+              <span>0</span>
+              <button id="button-carrinho"><a href="#">🛒</a></button>
+            </div>
+          </div>
+        </div>
+    </header>
+
+    <br><br><br><br><br><br><br><br>
+
+    <main>
+
+        <div class="container" id="container">
+            <div class="form-container sign-up-container">
+                <form action="#">
+                    <h1>Cadastrar-se</h1>
+                    <input type="text" placeholder="Nome" />
+                    <input type="email" placeholder="Email" />
+                    <input type="password" placeholder="Senha" />
+                    <button class="login-button">Criar Conta</button>
+                </form>
+            </div>
+            <div class="form-container sign-in-container">
+                <form action="#">
+                    <h1>Entrar</h1>
+                    <input type="email" placeholder="Email" />
+                    <input type="password" placeholder="Senha" />
+                    <a href="#">Esqueceu a sua senha?</a>
+                    <button class="login-button">Entrar</button>
+                </form>
+            </div>
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <h1>Bem-vindo de volta!</h1>
+                        <p>Já possui uma conta? Faça o login:</p>
+                        <button class="ghost" id="signIn">Entrar</button>
+                    </div>
+                    <div class="overlay-panel overlay-right">
+                        <h1>Olá, amigo(a)!</h1>
+                        <p>Crie uma conta para se juntar com a gente:</p>
+                        <button class="ghost" id="signUp">Cadastrar-se</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </main>
+
+    <br><br><br><br><br><br><br><br>
+
+    
+    
+</body>
+
+<footer class="site-footer">
+    <div class="container-footer">
+
+        <div class="coluna-1">
+
+        <h6>Sobre o Site</h6>
+        <p class="text-justify">Esse e-commerce foi uma atividade proposta na disciplina de Sistemas para Internet I, na Universidade Federal do Rio Grande (FURG). Não temos nenhuma ambição comercial com o projeto.</p>
+        
+        <br>
+
+        <h6>Sobre os Criadores</h6>
+        <p class="text-justify">Os alunos responsáveis pela criação do site foram: Romulo de Moraes, </p>
+        
+        </div>
+    </div>
+
+    <img class="logo-rodape" src="../img/adventure.png"/>   
+
+</footer>
+
+<script src="../js/script-login.js"></script>
+
+</html>

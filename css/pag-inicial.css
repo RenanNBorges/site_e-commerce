@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Rolagem suave? Não sentimos muito diferença, mas colocamos.*/
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primary: #094b65;
+}
+
+body {
+    background-color:#EEE;
+    font-family:'Lato', Helvetica, Arial;
+    font-size:15px;
+    margin:0;
+    min-height:100vh;
+    
+}
+
+/*Navegação do site:*/
+
+/*Imagem que é usada de plano de fundo da navegação superior*/
+.banner {
+    width: 100%;
+    border-top: 50px;
+    height: 93%;
+    max-height: 2200px; 
+    background-color: #000;
+    background-image: url(../img/imagem_de_fundo.png);
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height:60px;
+    background-color:#094b65;
+    box-shadow: 0px 3px 10px #464646;
+    border-top: 0;
+}
+
+.barra {
+    border-top: 2px solid var(--primary);
+    border-bottom: 2px solid var(--primary);
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+ }
+
+.menu{
+    height:60px;
+    display:flex; /* none; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #ffff;
+    text-decoration: none;
+    font-size: 1.15rem;
+    margin-left: 75px;
+}
+
+.dropdown {
+    display: none;
+}
+
+ul li:hover ul {
+    display: block;
+    color: #ffff;
+    padding-top: 20px;
+    width: 160px;
+    position: absolute;
+    background-color: #094b65;
+    border-radius: 10px;
+}
+
+ul li ul li{
+    padding: 10px;
+    font-size: 0.15rem;
+    align-items: center;
+    
+}
+
+ul li ul li a{
+    font-size: 0.15rem;
+    align-items: center;
+}
+
+ul li ul li:hover{
+    background-color: #0187a7;
+    border-radius: 10px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    width: 160px;
+    text-align: center;
+    position: relative;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #fff;
+    font-weight: 400;
+    margin: 0 5px;
+}
+
+.login-button {
+    display: flex;
+    flex-direction: row; 
+    margin-right: 30px;
+}
+
+#button-id {
+    align-items: center;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #0187a7;
+}
+
+#button-id a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+#button-carrinho {
+    border: none;
+    background-color: #0187a7;
+}
+
+#button-carrinho a {
+    text-decoration: none;
+}
+
+.menu-openner {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-left: 5px ;
+    background-color: #0187a7;
+    color: #fff;  
+}
+
+.menu-openner span {
+    margin-right:10px;
+}
+
+.menu-closer {
+    width:32px;
+    height:32px;
+    display:none;
+    font-size: 30px;
+}
+
+.conteudo-principal {
+    position: relative;
+    padding: 100px;
+    background: var(--primary);
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
+}
+
+.conteudo-principal h2 {
+    font-size: 3.5em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.conteudo-principal p {
+    font-size: 1em;
+    color: #fff;
+}
+
+/* PRODUTOS */
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.home-cards {
+  display: grid;
+  padding: 20px;
+  grid-template-columns: repeat(4, 500fr);
+  grid-gap: 50px;
+  margin-bottom: 40px;
+}
+
+.home-cards img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.home-cards h3 {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.home-cards p {
+  text-align: justify;
+
+}
+
+.home-cards a {
+  display: inline-block;
+  padding-top: 10px;
+  color: #0067b8;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.home-cards a:hover i {
+  margin-left: 10px;
+}
+
+/* FOOTER */
+
+.site-footer{
+  position: relative;
+  display: flex;
+  background-color:#26272b;
+  font-family:'Lato', Helvetica, Arial;
+  padding:25px 120px 20px;
+  font-size:15px;
+  line-height:22px;
+  color:#737373;
+}
+
+.container-footer {
+    width: 70%;
+}
+
+.coluna-1 {
+  padding-top: 0;
+  margin:20px 10px;
+  width: 55%;
+}
+
+.logo-rodape{
+  position: relative;
+  width: 190px;
+  height: 190px;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.site-footer h6 {
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../img/icone3.ico" />
+
+    <title>Mochilas - Adventure Shop</title>
+
+    <link rel="stylesheet" href="../css/produtos.css" />
+  </head>
+
+  <body>
+    <!-- NAVEGAÇÃO DA PÁGINA -->
+    <header>
+      <div class="menu">
+        <a class="logo" href="../index.html"><h3>Adventure</h3></a>
+
+        <nav class="nav-bar">
+          <div class="nav-list">
+            <ul>
+              <li class="nav-item"><a href="../index.html" class="nav-link">Início</a></li>
+              <li class="nav-item">
+                <a href="#" class="nav-link" id="produtos">Produtos à Venda</a>
+                <ul class="dropdown">
+                  <li><a href="./barracas.html" class="nav-link">Barracas</a></li>
+                  <li><a href="./mochilas.html" class="nav-link">Mochilas</a></li>
+                  <li><a href="./outros.html" class="nav-link">Outros</a></li>
+                </ul>
+
+
+              </li>
+              <li class="nav-item"><a href="#" class="nav-link"> Sobre</a></li>
+            </ul>
+          </div>
+        </nav>
+
+        <div class="login-button">
+          <button id="button-id"><a href="./login.html">Login</a></button>
+          <div class="menu-openner">
+            <span>0</span>
+            <button id="button-carrinho"><a href="#">🛒</a></button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- NAVEGAÇÃO DA PÁGINA -->]
+
+
+    <!-- MODELOS DE PRODUTOS QUE SÃO EXIBIDOS NA PÁGINA -->
+    <div class="models">
+      <!-- -->
+      <div class="produto-item">
+        <a href="">
+          <div class="produto-item--img"><img src="" /></div>
+          <div class="produto-item--add">+</div>
+        </a>
+        <div class="produto-item--price">R$ --</div>
+        <div class="produto-item--name">--</div>
+        <!-- <div class="produto-item--desc">--</div>-->
+        <br><br><br>
+      </div>
+    </div>
+    <!-- MODELOS DE PRODUTOS QUE SÃO EXIBIDOS NA PÁGINA -->
+
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main>
+
+      <div class="produto-area"></div>
+
+    </main>
+    <!-- CONTEÚDO PRINCIPAL -->
+
+
+
+    <!-- JANELA QUE ABRE NA PÁGINA QUANDO CLICAM NO PRODUTO -->
+    <div class="produtoWindowArea">
+      <div class="produtoWindowBody">
+        <div class="produtoBig">
+          <img src="" />
+        </div>
+        <div class="produtoInfo">
+          <h1>--</h1>
+          <div class="produtoInfo--desc">--</div>
+          <div class="produtoInfo--pricearea">
+            <div class="produtoInfo--sector">Preço</div>
+            <div class="produtoInfo--price">
+              <div class="produtoInfo--actualPrice">R$ --</div>
+              <div class="produtoInfo--qtarea">
+                <button class="produtoInfo--qtmenos">-</button>
+                <div class="produtoInfo--qt">1</div>
+                <button class="produtoInfo--qtmais">+</button>
+              </div>
+            </div>
+          </div>
+          <div class="produtoInfo--addButton">Adicionar ao carrinho</div>
+          <div class="produtoInfo--cancelButton">Cancelar</div>
+        </div>
+      </div>
+    </div>
+    <!-- JANELA QUE ABRE NA PÁGINA QUANDO CLICAM NO PRODUTO -->
+
+
+  </body>
+
+
+  <!-- RODAPÉ DO SITE -->
+  <footer class="site-footer">
+    <div class="container-footer">
+      
+      <div class="coluna-1">
+        
+        <h6>Sobre o Site</h6>
+        <p class="text-justify">Esse e-commerce foi uma atividade proposta na disciplina de Sistemas para Internet I, na Universidade Federal do Rio Grande (FURG). Não temos nenhuma ambição comercial com o projeto.</p>
+        
+        <br>
+        
+        <h6>Sobre os Criadores</h6>
+        <p class="text-justify">Os alunos responsáveis pela criação do site foram: Romulo de Moraes, </p>
+        
+        </div>
+      </div>
+      
+      <img class="logo-rodape" src="../img/adventure.png"/>   
+      
+  </footer>
+    <!-- RODAPÉ DO SITE -->
+
+  <script src="../produtos/mochilas.js"></script>
+  <script src="../js/script-produtos.js"></script>
+
+</html>
